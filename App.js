@@ -14,6 +14,7 @@ import {
 } from 'react-native';
 import AddTodo from './components/AddTodo';
 import Header from './components/Header';
+import Sandbox from './components/Sandbox';
 import TodoItem from './components/TodoItem';
 
 const App = () => {
@@ -47,6 +48,7 @@ const App = () => {
       
   }
   return (
+    // <Sandbox/>
     <TouchableWithoutFeedback onPress={() => {
       Keyboard.dismiss();
     }}>
@@ -75,10 +77,13 @@ const styles = StyleSheet.create({
    },
    content: {
      padding: 40,
-
+     flex: 1,
+     backgroundColor: '#D1D1D1'
    },
    list: {
-     marginTop: 20
+     flex: 1,
+     marginTop: 20,
+    //  backgroundColor: 'rgb(247, 234, 218)'
    }
 });
 
